@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>استثمار الأسهم - Investment Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="floating-coin">💰</div>
+    <div class="floating-coin">🪙</div>
+    <div class="floating-coin">💵</div>
+    <div class="floating-coin">💎</div>
+    <div class="floating-coin">📈</div>
+    <div class="floating-coin">💰</div>
+    <div class="floating-coin">🪙</div>
+    <div class="floating-coin">💵</div>
+    <div class="floating-coin">💎</div>
+    <div class="floating-coin">📊</div>
+    <div class="floating-coin">💰</div>
+    <div class="floating-coin">🪙</div>
+    <div class="floating-coin">💵</div>
+    <div class="floating-coin">📈</div>
+    <div class="floating-coin">💎</div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1>حاسبة الاستثمار في الأسهم</h1>
+      <div class="subtitle">
+        <span class="icon">💼</span>
+        <span>خطط لمستقبلك المالي بذكاء</span>
+      </div>
+    </div>
+
+    <form id="investmentForm">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>🏢 اسم الشركة</label>
+          <input type="text" id="companyName" required placeholder="أدخل اسم الشركة">
+        </div>
+
+        <div class="form-group">
+          <label>⏰ مدة الاستثمار (بالسنوات)</label>
+          <input type="number" id="investmentPeriod" required placeholder="مثال: 5">
+        </div>
+
+        <div class="form-group">
+          <label>📊 عدد الأسهم الحالي</label>
+          <input type="number" id="initialStocks" required placeholder="مثال: 100">
+        </div>
+
+        <div class="form-group currency-input">
+          <label>💰 سعر شراء السهم الحالي</label>
+          <input type="number" id="currentPrice" step="0.01" required placeholder="مثال: 150.50">
+        </div>
+
+        <div class="form-group currency-input">
+          <label>💳 الادخار الشهري</label>
+          <input type="number" id="monthlySavings" step="0.01" required placeholder="مثال: 1000">
+        </div>
+
+        <div class="form-group currency-input">
+          <label>📈 متوسط سعر الشراء المتوقع</label>
+          <input type="number" id="avgPurchasePrice" step="0.01" required placeholder="مثال: 145.75">
+        </div>
+
+        <div class="form-group currency-input">
+          <label>🎁 مقدار التوزيع لكل سهم</label>
+          <input type="number" id="distributionAmount" step="0.01" required placeholder="مثال: 2.50">
+        </div>
+
+        <div class="form-group">
+          <label>🔄 دورة الشراء (3 للربع سنوي أو 6 للنصف سنوي أو 12 للسنوي)</label>
+          <input type="number" id="purchasePeriod" required placeholder="3 أو 6">
+        </div>
+      </div>
+
+      <button type="submit" class="calculate-btn">
+        <span class="icon">🚀</span>
+        احسب الاستثمار
+        <span class="icon">📊</span>
+      </button>
+    </form>
+
+    <div class="loading" id="loading">
+      <div class="loading-spinner"></div>
+      <p>جاري حساب استثمارك...</p>
+    </div>
+
+    <div id="results" class="results" style="display: none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
