@@ -1,47 +1,14 @@
-An elegant and interactive web application built with HTML, CSS, and JavaScript that helps users simulate their long-term investment in company stocks. The UI is styled to reflect the theme of banking and investing, with emoji background patterns of money and gold coins.
+This is a simple yet powerful investment calculator built using HTML, CSS, and JavaScript, designed to help users simulate long-term investments in company stocks. The app allows you to input your current number of stocks, monthly savings, distribution income per share, and average purchase price, then calculates your potential growth over several years.
 
-<!-- Optional: replace with an actual screenshot filename -->
+With an attractive user interface themed around banking and investment, including emojis like 🪙 💰 🏦 in the background, users immediately recognize the purpose of the tool. The app supports Arabic layout (RTL) and shows key financial results like:
 
-📌 Features
-🧮 Calculates stock growth based on:
+Total number of stocks after the investment period
 
-Initial stock count
+Final investment value
 
-Monthly savings
-
-Distribution per share
-
-Average purchase price
-
-Current stock price
-
-Investment duration
-
-Purchase frequency (quarterly or semi-annually)
-
-💹 Displays:
-
-Final number of stocks owned
-
-Total investment value
-
-Distribution income per cycle and monthly
+Monthly and periodic distribution income
 
 Remaining wallet balance
 
-🎨 Beautiful Arabic RTL design with:
+No login, no backend — just a pure front-end app that runs in any browser. Ideal for personal use, educational projects, or portfolio demonstrations.
 
-Dark banking-themed background
-
-Golden emoji pattern (🪙 💰 🏦)
-
-Arabic support and clean layout
-
-🧑‍💻 Technologies Used
-HTML5
-
-CSS3 (with custom styles, no frameworks)
-
-JavaScript (Vanilla)
-
-Responsive & accessible RTL layout
